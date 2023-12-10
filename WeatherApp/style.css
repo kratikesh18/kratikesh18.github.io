@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  
+
+}
+
+.container{
+    height: 100%;
+    width: 100% ;
+    background: rgb(40, 25, 98);
+    background: linear-gradient(
+      207deg,
+      rgba(40, 25, 98, 1) 54%,
+      rgba(14, 96, 166, 1) 90%
+    );
+    display: flex;
+    justify-content: center;
+    
+}
+form {
+
+    margin-top: 6.3rem;
+    display: flex;
+    flex-direction: column;
+      width: 100%;
+  border: 1px solid;
+  max-width: 25rem;
+  text-align: center;
+  gap: 1rem;
+  outline: 0;
+  border: 0;
+}
+
+input[type="text"] {
+    /* display: block;   */
+    width: 100%;
+    padding: 1.3rem 0.3rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background: rgb(14, 96, 166);
+  background: linear-gradient(
+    207deg,
+    rgba(14, 96, 166, 1) 9%,
+    rgba(51, 49, 60, 1) 54%
+    );
+    border: 0;
+    border-bottom: 2px solid #888;
+    color: white;
+    
+}
+
+input[type="text"]::placeholder{
+    color: rgb(211, 211, 211);
+    
+}
+input[type="text"]:focus {
+  border-color: rgb(251, 0, 255);
+  outline: 0;
+}
+
+ul {
+  text-align: left;
+  color: white;
+  list-style-type: none;
+  border-radius: 10px;
+}
+ul li {
+  background: rgb(14, 96, 166);
+  background: linear-gradient(
+    65deg,
+    rgba(14, 96, 166, 1) 47%,
+    rgba(13, 123, 124, 1) 61%,
+    rgba(15, 66, 213, 1) 100%
+  );
+  margin-top: 0.5rem;
+  padding: 0.9rem;
+  padding-left: 0.4rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ul li span {
+  color: rgb(197, 181, 181);
+  font-size: 0.7rem;
+}
+
+button#city-change{
+  text-align: center;
+  width: fit-content;
+  align-self: center;
+  padding: 0.5rem;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+
+  background-color: orange;
+}
+#ico{
+  width:fit-content;
+  height: fit-content;
+  align-self: center;
+}
+#temp{
+  margin-top: -2rem;
+  font-size: 3rem;
+}
+.information{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 1rem;
+}
+
+div.value{
+  padding-top: 0.6rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+div.value span{
+ font-size: 1.5rem;
+  color: #b5b4b4;
+}
+
+@media (width < 436px) {
+  .container{
+    background: black;
+  }
+  
+
+}
