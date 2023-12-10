@@ -12,7 +12,7 @@ let key = "88906602a8c7d1eb1528e7e4a994a7ad";
 async function search() {
     const phrase = document.querySelector('input[type="text"]').value;
     const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}&units=metric`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}&units=metric`
     );
     const data = await response.json();
 
