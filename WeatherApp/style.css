@@ -8,21 +8,32 @@
 body {
   font-family: sans-serif;
   height: 100vh;
+  background: linear-gradient(
+    207deg,
+    rgba(40, 25, 98, 1) 54%,
+    rgba(14, 96, 166, 1) 90%
+  );background: rgb(40, 25, 98);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   
 
 }
-
+.title-heading{
+  font-size:3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
 .container{
+
     height: 100%;
     width: 100% ;
-    background: rgb(40, 25, 98);
-    background: linear-gradient(
-      207deg,
-      rgba(40, 25, 98, 1) 54%,
-      rgba(14, 96, 166, 1) 90%
-    );
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
     
 }
 form {
