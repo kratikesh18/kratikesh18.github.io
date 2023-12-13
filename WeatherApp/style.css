@@ -139,10 +139,6 @@ div.value span{
   color: #b5b4b4;
 }
 
-@media (width < 436px) {
-  .container{
-    background: black;
-  }
-  
-
+#footer-div{
+  margin-bottom: 2rem;
 }
